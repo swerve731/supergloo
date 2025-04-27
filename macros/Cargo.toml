@@ -2,6 +2,10 @@
 name = "gloo_macros"
 version = "0.1.0"
 edition = "2024"
+description = "Macros for the Supergloo library, providing path-based routing and other utilities."
+license = "MIT OR Apache-2.0"
+authors = ["Eoin Mitchell eoinmitchell39@proton.me"]
+repository = "https://github.com/swerve731/supergloo" 
 
 [lib]
 proc-macro = true
