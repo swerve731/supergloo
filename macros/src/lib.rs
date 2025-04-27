@@ -39,7 +39,7 @@ pub fn gloo_handler(attr: TokenStream, item: TokenStream) -> TokenStream {
         #input
 
 
-        inventory::submit! {
+        supergloo::inventory::submit! {
             GlooHandler {
                 path: module_path!(),
                     // .replace("::", "/")

@@ -1,4 +1,8 @@
 
+pub use inventory;
+
+#[cfg(feature = "macros")]
+pub use gloo_macros::gloo_handler;
 
 
 pub struct GlooHandler {
