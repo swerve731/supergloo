@@ -86,6 +86,12 @@ pub fn gloo_routes(_input: TokenStream) -> TokenStream {
                 if handler.fn_name != "base" {
                     path = format!("{}/{}", path, handler.fn_name);
                 }
+
+                if !path.starts_with("/") {
+                    path = format!("/{}", path);
+                }
+
+
                 dbg!(&path);
 
 
