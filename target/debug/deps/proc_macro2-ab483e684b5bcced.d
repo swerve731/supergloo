@@ -1,0 +1,12 @@
+/home/nioe/projects/supergloo/target/debug/deps/libproc_macro2-ab483e684b5bcced.rmeta: /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/lib.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/marker.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/parse.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/rcvec.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/detection.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/fallback.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/extra.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/wrapper.rs
+
+/home/nioe/projects/supergloo/target/debug/deps/proc_macro2-ab483e684b5bcced.d: /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/lib.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/marker.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/parse.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/rcvec.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/detection.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/fallback.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/extra.rs /home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/wrapper.rs
+
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/lib.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/marker.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/parse.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/rcvec.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/detection.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/fallback.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/extra.rs:
+/home/nioe/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/proc-macro2-1.0.95/src/wrapper.rs:
