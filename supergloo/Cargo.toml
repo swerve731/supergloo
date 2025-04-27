@@ -6,7 +6,7 @@ description = "A library for rapid development of web applications in Rust and a
 license = "MIT OR Apache-2.0"
 authors = ["Eoin Mitchell eoinmitchell39@proton.me"]
 repository = "https://github.com/swerve731/supergloo" # Link to your repo (optional but good practice)
-keywords = ["web", "axum", "supergloo", "axum path routing", "easy web"]
+keywords = ["web", "axum", "supergloo", "routing", "easy"]
 
 
 [dependencies]
