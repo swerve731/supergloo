@@ -1,1 +1,0 @@
-cargo:rustc-env=MIME_TYPES_GENERATED_PATH=/home/nioe/projects/supergloo/target/debug/build/mime_guess-13f0dd0a9da371d9/out/mime_types_generated.rs
