@@ -5,7 +5,6 @@ use syn::{parse_macro_input, ItemFn};
 
 #[proc_macro_attribute]
 pub fn gloo_handler(attr: TokenStream, item: TokenStream) -> TokenStream {
-    // Parse attributes (e.g., HTTP method) or default to GET
     let method = if attr.is_empty() {
         quote! { get }
     } else {
@@ -26,7 +25,6 @@ pub fn gloo_handler(attr: TokenStream, item: TokenStream) -> TokenStream {
 
     };
     
-    // Parse the function
     let input_item = item.clone();
     let input = parse_macro_input!(input_item as ItemFn);
     let fn_ident = &input.sig.ident;
@@ -36,7 +34,6 @@ pub fn gloo_handler(attr: TokenStream, item: TokenStream) -> TokenStream {
     let fn_name = syn::LitStr::new(&fn_name_string, fn_ident.span());
     
     
-    // Generate the expanded code
     let expanded = quote! {
 
         #input
@@ -67,9 +64,6 @@ pub fn gloo_routes(_input: TokenStream) -> TokenStream {
 
                 let mut path = handler.path.split("::").collect::<Vec<_>>();
 
-                // if !path.contains("routes") {
-                //     panic!("Path must contain 'routes'");
-                // }
 
                 for i in 0..path.len() {
                     if path[i] == "routes" {
