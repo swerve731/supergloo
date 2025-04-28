@@ -18,6 +18,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "512761e0bb2578dd7380c6baaa0f4ce03e84f95e960231d1dec8bf4d7d6e2627"
 
 [[package]]
+name = "async-trait"
+version = "0.1.88"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e539d3fca749fcee5236ab05e93a52867dd549cc157c8cb7f99595f3cedffdb5"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "axum"
 version = "0.8.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -497,6 +508,7 @@ dependencies = [
 name = "supergloo"
 version = "0.1.2"
 dependencies = [
+ "async-trait",
  "axum",
  "derive_more",
  "gloo_macros",

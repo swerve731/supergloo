@@ -540,7 +540,7 @@ dependencies = [
  "axum-extra",
  "derive_more",
  "dotenvy",
- "gloo_macros 0.1.2",
+ "gloo_macros 0.1.3",
  "http",
  "inventory",
  "serde",
@@ -728,7 +728,7 @@ checksum = "07e28edb80900c19c28f1072f2e8aeca7fa06b23cd4169cefe1af5aa3260783f"
 
 [[package]]
 name = "gloo_macros"
-version = "0.1.2"
+version = "0.1.3"
 dependencies = [
  "inventory",
  "once_cell",
@@ -739,9 +739,9 @@ dependencies = [
 
 [[package]]
 name = "gloo_macros"
-version = "0.1.2"
+version = "0.1.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "962ed07e812f6b4ab789edf89b2e5fa4ea5892f419037bbb65e4716f5be957f9"
+checksum = "c3289b9d515d1147878de64716e7cd9adb0e5ec34c691f2b8189589386d26738"
 dependencies = [
  "inventory",
  "once_cell",
@@ -1991,9 +1991,10 @@ checksum = "13c2bddecc57b384dee18652358fb23172facb8a2c51ccc10d74c157bdea3292"
 name = "supergloo"
 version = "0.1.2"
 dependencies = [
+ "async-trait",
  "axum",
  "derive_more",
- "gloo_macros 0.1.2 (registry+https://github.com/rust-lang/crates.io-index)",
+ "gloo_macros 0.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "inventory",
 ]
 
