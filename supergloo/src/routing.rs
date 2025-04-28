@@ -3,13 +3,13 @@ use crate::GlooHandler;
 
 
 pub trait GlooRouting {
-    fn gloo_routes() -> axum::Router;
+    fn gloo_routes(self) -> axum::Router;
 }
 
 
 
 impl GlooRouting for axum::Router {
-    fn gloo_routes() -> axum::Router {
+    fn gloo_routes(self) -> axum::Router {
         let mut router = axum::Router::new();
         for handler in inventory::iter::<GlooHandler> {
             let mut path = handler.path.split("::").collect::<Vec<_>>();
@@ -28,8 +28,16 @@ impl GlooRouting for axum::Router {
             if !path.starts_with("/") {
                 path = format!("/{}", path);
             }
+
+            if !path.ends_with("/") {
+                path = format!("{}/", path);
+            }
+            
+            dbg!(&path);
             router = router.route(&path, (handler.router)());
         }
-        router
+
+        self.merge(router)
+
     }
 }
