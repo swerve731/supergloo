@@ -134,3 +134,12 @@ Supergloo uses the [`inventory`](https://crates.io/crates/inventory) crate behin
 
 This project is licensed under the [MIT License](LICENSE) or [Apache License 2.0](LICENSE-APACHE).
 
+## Future Features
+
+
+Config based layering, future versions will have a config file where you can define your cors rules and static directories to serve
+
+Cargo generate template, a template that has all the necessary default configuration of cors and routing to start your app
+
+
+I plan on working on deep integrations focused at Maud and HTMX
