@@ -1,13 +1,13 @@
-use axum::{response::{IntoResponse, Response}, Router};
+use axum::Router;
 pub mod routes;
 
-use supergloo::{GlooHandler, routing::GlooRouting};
+use supergloo::routing::GlooRouting;
 
 
 #[tokio::main]
 async fn main() {
     let router = Router::new()
-        .gloo_routes();
+        .gloo_routes().await;
 
     let listener = tokio::net::TcpListener::bind("127.0.0.1:3000").await.unwrap();
 
