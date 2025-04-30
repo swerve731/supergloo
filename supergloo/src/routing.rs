@@ -32,8 +32,8 @@ impl GlooRouting for axum::Router {
 
 
             dbg!(&path);
-            dbg!(&handler.path);
-            dbg!(&handler.kind);
+            // dbg!(&handler.path);
+            // dbg!(&handler.kind);
 
             // Determine the actual Axum handler based on GlooHandlerKind
             let route_handler = match &handler.kind {
@@ -41,9 +41,9 @@ impl GlooRouting for axum::Router {
                     let mut used_layouts: Vec<fn(maud::Markup) -> maud::Markup> = vec![]; // Explicit type
                     for layout in inventory::iter::<GlooLayout> {
 
-                        dbg!(layout);
+                        // dbg!(layout);
                         let layout_path_str = utils::route_path_from_mod_path(layout.path);
-                        dbg!(&layout_path_str);
+                        // dbg!(&layout_path_str);
                         // Handle root layout case
                         if layout_path_str == "/" {
                              // Apply root layout if the handler path is also effectively root or starts with it
@@ -62,8 +62,8 @@ impl GlooRouting for axum::Router {
                         let layout_path_segments: Vec<&str> = layout_path_str.trim_matches('/').split('/').collect();
                         let handler_path_segments: Vec<&str> = path.trim_matches('/').split('/').collect();
 
-                        dbg!(&layout_path_segments);
-                        dbg!(&handler_path_segments);
+                        // dbg!(&layout_path_segments);
+                        // dbg!(&handler_path_segments);
 
                         // Check if the handler path starts with the layout path
                         if handler_path_segments.len() >= layout_path_segments.len() &&
