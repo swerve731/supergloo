@@ -55,9 +55,9 @@ impl GlooRouting for axum::Router {
                         }
 
                         // Skip empty layout paths if not root
-                        if layout_path_str.is_empty() || layout_path_str == "/" {
-                            continue;
-                        }
+                        // if layout_path_str.is_empty() || layout_path_str == "/" {
+                         //   continue;
+                        //}
 
                         let layout_path_segments: Vec<&str> = layout_path_str.trim_matches('/').split('/').collect();
                         let handler_path_segments: Vec<&str> = path.trim_matches('/').split('/').collect();
