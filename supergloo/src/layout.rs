@@ -5,11 +5,6 @@ pub struct GlooLayout {
     pub path: &'static str,
 }
 
-
-
-
-
-
 inventory::collect!(GlooLayout);
 
 
