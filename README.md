@@ -17,8 +17,8 @@ Add `supergloo` and its companion macro crate `gloo_macros` to your `Cargo.toml`
 [dependencies]
 axum = "0.7" # Or your desired version
 tokio = { version = "1", features = ["full"] } # Needed for the Axum runtime
-supergloo = { path = "../supergloo" } # Or use git/crates.io version
-gloo_macros = { path = "../macros" } # Or use git/crates.io version
+supergloo = "*" # Or use git/crates.io version
+gloo_macros = "*" # Or use git/crates.io version
 ```
 
 ## Usage
