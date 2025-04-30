@@ -5,7 +5,7 @@ pub mod layout;
 pub mod user;
 // this creates the "/" route 
 #[gloo_handler("view")]
-async fn base() -> Markup {
+async fn root() -> Markup {
     html! {
         h1 { "Hello, world!" }
     }

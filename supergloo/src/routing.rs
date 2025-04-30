@@ -20,10 +20,10 @@ impl GlooRouting for axum::Router {
             let mut path = utils::route_path_from_mod_path(&handler.full_mod_path());
 
             // If the function name is 'base', use the directory path directly
-            if handler.fn_name == "base" {
+            if handler.fn_name == "root" {
                  path = utils::route_path_from_mod_path(handler.path);
             } else {
-                 path = format!("{}{}", utils::route_path_from_mod_path(handler.path), handler.fn_name);
+                 path = format!("{}/{}", utils::route_path_from_mod_path(handler.path), handler.fn_name);
             }
             // Ensure path starts with / and doesn't end with / unless it's the root
             if !path.starts_with('/') {
