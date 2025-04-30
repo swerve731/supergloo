@@ -1,6 +1,6 @@
 # Supergloo
 
-Supergloo is a Rust library designed to simplify route creation in [Axum](https://github.com/tokio-rs/axum) web applications. It automatically generates routes based on your handler functions' module paths and names, reducing boilerplate code.
+Supergloo is a Rust library designed to simplify route creation in [Axum](https://github.com/tokio-rs/axum) web applications. It automatically generates routes based on your handler functions' module paths and names, reducing boilerplate code. The routing is similar to svelte where the route is decided by the module path and function name. layouts will render on all children that are in their dir. use gloo_handler("view") to glue layouts to the handler. gloo_handler can take any http request type (get || post || options || delete etc...) example: gloo_handler("post").
 
 ## Features
 
