@@ -13,5 +13,9 @@ keywords = ["web", "axum", "supergloo", "routing", "easy"]
 axum = { version = "0.8.3", features = ["macros", "tracing"] }
 derive_more = { version = "2.0.1", features = ["full"] }
 inventory = "0.3.20"
-gloo_macros = "0.1.3"
+# gloo_macros = "0.1.3"
 async-trait = "0.1.88"
+maud = "0.27.0"
+
+gloo_macros = {path = "../macros"}
+futures = "0.3.31"
