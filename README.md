@@ -96,7 +96,8 @@ mod routes;
 #[tokio::main]
 async fn main() {
     let app = Router::new()
-        .gloo_routes();
+        .gloo_routes()
+        .await;
 
     let listener = tokio::net::TcpListener::bind("127.0.0.1:3000").await.unwrap();
     println!("Listening on http://127.0.0.1:3000");
