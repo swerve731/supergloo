@@ -8,7 +8,7 @@ use supergloo::GlooHandler;
 
 // this creates the "/" route 
 #[gloo_handler("get")]
-async fn base() -> Response {
+async fn root() -> Response {
     "home".into_response()
 } 
 

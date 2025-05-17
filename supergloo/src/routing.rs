@@ -22,7 +22,7 @@ impl GlooRouting for axum::Router {
                 }
             }
             let mut path = path.join("/").replace("::", "/");
-            if handler.fn_name != "base" {
+            if handler.fn_name != "root" {
                 path = format!("{}/{}", path, handler.fn_name);
             }
             if !path.starts_with("/") {
