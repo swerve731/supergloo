@@ -35,7 +35,8 @@ pub fn gloo_handler(attr: TokenStream, item: TokenStream) -> TokenStream {
     
     
     let expanded = quote! {
-
+        
+        #[allow(non_snake_case)]
         #input
 
 
