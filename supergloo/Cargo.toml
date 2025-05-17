@@ -1,6 +1,6 @@
 [package]
 name = "supergloo"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2024"
 description = "A library for rapid development of web applications in Rust and axum, with a focus on ease of use and flexibility through path based routes."
 license = "MIT OR Apache-2.0"
