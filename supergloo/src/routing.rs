@@ -54,7 +54,7 @@ fn parse_route_path(mod_path: &str, fn_name: &str) -> String {
         .split("_")
         .map(|s| {
             if s.starts_with("PTH") {
-                let path_var = format!(":{}", s[3..].to_string());
+                let path_var = format!("{{{}}}", s[3..].to_string());
                 path_var
             } else if s == "root" {
                 "".to_string()
@@ -97,19 +97,19 @@ mod tests {
         let mod_path = "routes::test::deep::routing::with::more::stuff";
         let fn_name = "test_more_long_function_name_PTHtest_more_stuff";
         let path = parse_route_path(mod_path, fn_name);
-        assert_eq!(path, "/test/deep/routing/with/more/stuff/test/more/long/function/name/:test/more/stuff/");
+        assert_eq!(path, "/test/deep/routing/with/more/stuff/test/more/long/function/name/{test}/more/stuff/");
 
 
         let mod_path = "routes";
         let fn_name = "hello_PTHname";
         let path = parse_route_path(mod_path, fn_name);
-        assert_eq!(path, "/hello/:name/");
+        assert_eq!(path, "/hello/{name}/");
 
 
         let mod_path = "routes::user";
         let fn_name = "PTHfirstname_PTHlastname";
         let path = parse_route_path(mod_path, fn_name);
-        assert_eq!(path, "/user/:firstname/:lastname/");
+        assert_eq!(path, "/user/{firstname}/{lastname}/");
 
     }
 }
