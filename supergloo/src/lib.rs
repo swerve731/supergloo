@@ -1,5 +1,6 @@
 pub mod routing;
-
+pub mod config;
+pub mod error;
 pub use inventory;
 pub use gloo_macros::gloo_handler;
 

@@ -1,13 +1,14 @@
-use crate::GlooHandler;
+use crate::{config::GlooConfig, GlooHandler};
 
 
-
+#[async_trait::async_trait]
 pub trait GlooRouting {
     fn gloo_routes(self) -> axum::Router;
+    async fn run_from_config(self, path: &str) -> Result<(), crate::error::Error>;
 }
 
 
-
+#[async_trait::async_trait]
 impl GlooRouting for axum::Router {
     fn gloo_routes(self) -> axum::Router {
         let mut router = axum::Router::new();
@@ -39,5 +40,18 @@ impl GlooRouting for axum::Router {
 
         self.merge(router)
 
+    }
+
+    async fn run_from_config(self, path: &str) -> Result<(), crate::error::Error> {
+        let c = GlooConfig::from_toml(path)?;
+
+        let host = format!("{}:{}", c.host_address, c.port);
+
+        let listener = tokio::net::TcpListener::bind(&host).await?;
+
+        axum::serve(listener, self)
+            .await?;
+
+        Ok(())
     }
 }
